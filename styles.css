@@ -505,7 +505,6 @@ header {
     font-size: var(--fs-400);
     background-color: var(--clr-primary-100);
     color: var(--clr-primary-900);
-    box-shadow: var(--shadow-light);
 }
 
 .textbox__input {
@@ -563,7 +562,6 @@ header {
     border-radius: 100%;
     background-color: var(--clr-primary-600);
     overflow: hidden;
-    box-shadow: var(--shadow-light);
 }
 
 .submit::after {
