@@ -106,60 +106,58 @@
             <div class="container container--content">
                 <h1 class="title">Welcome to the Zoo</h1>
                 <p class="description">Select an animal, write a message and send it to your friends!</p>
-                <div class="layout">
-                    <form class="form" id="form">
-                        <!-- Animal Selection -->
-                        <div class="select">
-                            <label class="option">
-                                <input class="option__input" type="radio" name="input-option" value="lion" checked>
-                                Lion
-                            </label>
-                            <label class="option">
-                                <input class="option__input" type="radio" name="input-option" value="tiger">
-                                Tiger
-                            </label>
-                        </div>
-                        <div class="form__wrapper">
-                            <!-- Output Section -->
-                            <div class="output">
-                                <div class="animal" id="animal" data-option="lion">
-                                    <!-- Lion Image -->
-                                    <div class="animal__image" id="lion-image">
-                                        <div class="animal__layer" id="lion-layer-0"></div>
-                                        <div class="animal__layer animal__layer--animated" id="lion-layer-1"></div>
-                                        <div class="animal__layer" id="lion-layer-2"></div>
-                                    </div>
-                                    <!-- Tiger Image -->
-                                    <div class="animal__image" id="tiger-image">
-                                        <div class="animal__layer" id="tiger-layer-0"></div>
-                                        <div class="animal__layer animal__layer--animated" id="tiger-layer-1"></div>
-                                        <div class="animal__layer" id="tiger-layer-2"></div>
-                                    </div>
+                <form class="form" id="form">
+                    <!-- Animal Selection -->
+                    <div class="select">
+                        <label class="option">
+                            <input class="option__input" type="radio" name="input-option" value="lion" checked>
+                            Lion
+                        </label>
+                        <label class="option">
+                            <input class="option__input" type="radio" name="input-option" value="tiger">
+                            Tiger
+                        </label>
+                    </div>
+                    <div class="messenger">
+                        <!-- Output Section -->
+                        <div class="output">
+                            <div class="animal" id="animal" data-option="lion">
+                                <!-- Lion Image -->
+                                <div class="animal__image" id="lion-image">
+                                    <div class="animal__layer" id="lion-layer-0"></div>
+                                    <div class="animal__layer animal__layer--animated" id="lion-layer-1"></div>
+                                    <div class="animal__layer" id="lion-layer-2"></div>
                                 </div>
-                                <!-- Message Bubble -->
-                                <div class="bubble">
-                                    <p class="message" id="message"></p>
+                                <!-- Tiger Image -->
+                                <div class="animal__image" id="tiger-image">
+                                    <div class="animal__layer" id="tiger-layer-0"></div>
+                                    <div class="animal__layer animal__layer--animated" id="tiger-layer-1"></div>
+                                    <div class="animal__layer" id="tiger-layer-2"></div>
                                 </div>
                             </div>
+                            <!-- Message Bubble -->
+                            <div class="bubble">
+                                <p class="message" id="message"></p>
+                            </div>
+                        </div>
 
-                            <!-- Text Input -->
-                            <div class="textbar">
-                                <div class="textbox">
-                                    <input class="textbox__input" id="input-text" type="text" name="input-text"
-                                        aria-label="Write a message" placeholder="Write a message" maxlength="35"
-                                        autocomplete="off">
-                                    <button class="textbox__delete" type="button" id="delete-button" disabled>
-                                        <span class="sr-only">Clear</span>
-                                    </button>
-                                </div>
-                                <!-- Submit Button -->
-                                <button class="submit" type="submit" id="submit">
-                                    <span class="sr-only">Submit</span>
+                        <!-- Text Input -->
+                        <div class="textbar">
+                            <div class="textbox">
+                                <input class="textbox__input" id="input-text" type="text" name="input-text"
+                                    aria-label="Write a message" placeholder="Write a message" maxlength="35"
+                                    autocomplete="off">
+                                <button class="textbox__delete" type="button" id="delete-button" disabled>
+                                    <span class="sr-only">Clear</span>
                                 </button>
                             </div>
+                            <!-- Submit Button -->
+                            <button class="submit" type="submit" id="submit">
+                                <span class="sr-only">Submit</span>
+                            </button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

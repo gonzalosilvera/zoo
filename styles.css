@@ -321,8 +321,8 @@ header {
     margin: auto;
 }
 
-/* layout */
-.layout {
+/* Form */
+.form {
     max-width: 576px;
     margin: 2rem auto 0;
 }
@@ -378,7 +378,7 @@ header {
 }
 
 /* Form wrapper */
-.form__wrapper {
+.messenger {
     border-radius: 1rem;
     margin-top: 2rem;
     background-color: var(--clr-primary-900);
@@ -684,16 +684,12 @@ header {
         font-size: var(--fs-950);
     }
 
-    /* Layout */
-    .layout {
+    /* Form */
+    .form {
         margin-top: 4rem;
     }
 
-    /* Form wrapper */
-    .form__wrapper {
-        margin-top: 4rem;
-    }
-
+    /* Output */
     .output {
         padding: 4rem 2rem;
     }    
