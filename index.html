@@ -14,7 +14,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://gonzalosilvera.com/" />
+    <meta property="og:url" content="https://zoo.gonzalosilvera.com/" />
     <meta property="og:title" content="Zoo" />
     <meta property="og:description" content="Frontend Developer Exercise" />
     <meta property="og:image" content="./images/paw_icon.svg" />
@@ -23,7 +23,7 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:url" content="https://gonzalosilvera.com/" />
+    <meta property="twitter:url" content="https://zoo.gonzalosilvera.com/" />
     <meta property="twitter:title" content="Zoo" />
     <meta property="twitter:description" content="Frontend Developer Exercise" />
     <meta property="twitter:image" content="./images/paw_icon.svg" />
@@ -119,44 +119,46 @@
                                 Tiger
                             </label>
                         </div>
+                        <div class="form__wrapper">
+                            <!-- Output Section -->
+                            <div class="output">
+                                <div class="animal" id="animal" data-option="lion">
+                                    <!-- Lion Image -->
+                                    <div class="animal__image" id="lion-image">
+                                        <div class="animal__layer" id="lion-layer-0"></div>
+                                        <div class="animal__layer animal__layer--animated" id="lion-layer-1"></div>
+                                        <div class="animal__layer" id="lion-layer-2"></div>
+                                    </div>
+                                    <!-- Tiger Image -->
+                                    <div class="animal__image" id="tiger-image">
+                                        <div class="animal__layer" id="tiger-layer-0"></div>
+                                        <div class="animal__layer animal__layer--animated" id="tiger-layer-1"></div>
+                                        <div class="animal__layer" id="tiger-layer-2"></div>
+                                    </div>
+                                </div>
+                                <!-- Message Bubble -->
+                                <div class="bubble">
+                                    <p class="message" id="message"></p>
+                                </div>
+                            </div>
 
-                        <!-- Text Input -->
-                        <div class="textbar">
-                            <div class="textbox">
-                                <input class="textbox__input" id="input-text" type="text" name="input-text"
-                                    aria-label="Write a message" placeholder="Write a message" maxlength="35"
-                                    autocomplete="off">
-                                <button class="textbox__delete" type="button" id="delete-button" disabled>
-                                    <span class="sr-only">Clear</span>
+                            <!-- Text Input -->
+                            <div class="textbar">
+                                <div class="textbox">
+                                    <input class="textbox__input" id="input-text" type="text" name="input-text"
+                                        aria-label="Write a message" placeholder="Write a message" maxlength="35"
+                                        autocomplete="off">
+                                    <button class="textbox__delete" type="button" id="delete-button" disabled>
+                                        <span class="sr-only">Clear</span>
+                                    </button>
+                                </div>
+                                <!-- Submit Button -->
+                                <button class="submit" type="submit" id="submit">
+                                    <span class="sr-only">Submit</span>
                                 </button>
                             </div>
-                            <!-- Submit Button -->
-                            <button class="submit" type="submit" id="submit">
-                                <span class="sr-only">Submit</span>
-                            </button>
                         </div>
                     </form>
-                    <!-- Output Section -->
-                    <div class="output">
-                        <div class="animal" id="animal" data-option="lion">
-                            <!-- Lion Image -->
-                            <div class="animal__image" id="lion-image">
-                                <div class="animal__layer" id="lion-layer-0"></div>
-                                <div class="animal__layer animal__layer--animated" id="lion-layer-1"></div>
-                                <div class="animal__layer" id="lion-layer-2"></div>
-                            </div>
-                            <!-- Tiger Image -->
-                            <div class="animal__image" id="tiger-image">
-                                <div class="animal__layer" id="tiger-layer-0"></div>
-                                <div class="animal__layer animal__layer--animated" id="tiger-layer-1"></div>
-                                <div class="animal__layer" id="tiger-layer-2"></div>
-                            </div>
-                        </div>
-                        <!-- Message Bubble -->
-                        <div class="bubble">
-                            <p class="message" id="message"></p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
