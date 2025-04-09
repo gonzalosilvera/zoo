@@ -603,28 +603,7 @@ header {
 }
 
 /* Media Queries */
-/* 425px and above */
-@media (min-width: 425px) {
-
-    /* Output */
-    .output {
-        gap: 3rem;
-    }
-
-    /* Bubble */
-    .bubble::before {
-        left: -1.5rem;
-    }
-
-    /* Message */
-    .message {
-        font-size: var(--fs-500);
-        padding: 1.5rem;
-    }
-}
-
-/* 768px and above */
-@media (min-width: 768px) {
+@media (min-width: 640px) {
 
     /* body */
     body {
