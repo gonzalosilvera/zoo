@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+
+    <!-- Primary meta tags -->
+    <title>Zoo</title>
+    <meta name="title" content="Zoo" />
+    <meta name="description" content="Frontend Developer Exercise" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gonzalosilvera.com/" />
+    <meta property="og:title" content="Zoo" />
+    <meta property="og:description" content="Frontend Developer Exercise" />
+    <meta property="og:image" content="./images/paw_icon.svg" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://gonzalosilvera.com/" />
+    <meta property="twitter:title" content="Zoo" />
+    <meta property="twitter:description" content="Frontend Developer Exercise" />
+    <meta property="twitter:image" content="./images/paw_icon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="menu">
+            <div class="container container--menu">
+                <!-- Logo -->
+                <a class="logo" href="https://gonzalosilvera.com/" target="_blank" rel="noopener">
+                    <img class="logo__image" src="./images/favicon.svg" alt="Zoo logo">
+                    <span class="logo__text">Zoo</span>
+                </a>
+                <!-- Menu Button -->
+                <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="menu-nav">
+                    <span class="sr-only">Menu</span>
+                    <img class="menu-button__image" src="./images/menu_icon.svg" alt="Menu icon">
+                </button>
+                <!-- Navigation -->
+                <nav class="nav" id="nav" hidden>
+                    <ul class="nav__list">
+                        <li>
+                            <a class="nav__link" href="https://gonzalosilvera.com/" target="_blank" rel="noopener">
+                                <img class="nav__icon" src="./images/briefcase_icon.svg" alt="Portfolio icon">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="https://www.linkedin.com/in/gonzalosilvera" target="_blank"
+                                rel="noopener">
+                                <img class="nav__icon" src="./images/linkedin_icon.svg" alt="LinkedIn icon">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="https://github.com/gonzalosilvera" target="_blank"
+                                rel="noopener">
+                                <img class="nav__icon" src="./images/github_icon.svg" alt="GitHub icon">
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container container--hero">
+                <!-- Parallax Layers -->
+                <div class="parallax" id="parallax">
+                    <div class="parallax__layer parallax__layer--fixed" id="parallax-layer-0" data-speed="11"></div>
+                    <div class="parallax__layer parallax__layer--fixed" id="parallax-layer-1" data-speed="16"></div>
+                    <div class="parallax__layer parallax__layer--fixed" id="parallax-layer-2" data-speed="16"></div>
+                    <div class="parallax__layer parallax__layer--fixed" id="parallax-layer-3" data-speed="26"></div>
+                    <div class="parallax__layer parallax__layer--fixed" id="parallax-layer-4" data-speed="36"></div>
+                    <div class="parallax__layer parallax__layer--fixed" id="parallax-layer-5" data-speed="49"></div>
+                    <div class="parallax__layer parallax__layer--fixed" id="parallax-layer-6" data-speed="69"></div>
+                    <div class="parallax__layer" id="parallax-layer-7" data-speed="100"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content">
+            <div class="container container--content">
+                <h1 class="title">Welcome to the Zoo</h1>
+                <p class="description">Select an animal, write a message and send it to your friends!</p>
+                <div class="layout">
+                    <form class="form" id="form">
+                        <!-- Animal Selection -->
+                        <div class="select">
+                            <label class="option">
+                                <input class="option__input" type="radio" name="input-option" value="lion" checked>
+                                Lion
+                            </label>
+                            <label class="option">
+                                <input class="option__input" type="radio" name="input-option" value="tiger">
+                                Tiger
+                            </label>
+                        </div>
+
+                        <!-- Text Input -->
+                        <div class="textbar">
+                            <div class="textbox">
+                                <input class="textbox__input" id="input-text" type="text" name="input-text"
+                                    aria-label="Write a message" placeholder="Write a message" maxlength="35"
+                                    autocomplete="off">
+                                <button class="textbox__delete" type="button" id="delete-button" disabled>
+                                    <span class="sr-only">Clear</span>
+                                </button>
+                            </div>
+                            <!-- Submit Button -->
+                            <button class="submit" type="submit" id="submit">
+                                <span class="sr-only">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Output Section -->
+                    <div class="output">
+                        <div class="animal" id="animal" data-option="lion">
+                            <!-- Lion Image -->
+                            <div class="animal__image" id="lion-image">
+                                <div class="animal__layer" id="lion-layer-0"></div>
+                                <div class="animal__layer animal__layer--animated" id="lion-layer-1"></div>
+                                <div class="animal__layer" id="lion-layer-2"></div>
+                            </div>
+                            <!-- Tiger Image -->
+                            <div class="animal__image" id="tiger-image">
+                                <div class="animal__layer" id="tiger-layer-0"></div>
+                                <div class="animal__layer animal__layer--animated" id="tiger-layer-1"></div>
+                                <div class="animal__layer" id="tiger-layer-2"></div>
+                            </div>
+                        </div>
+                        <!-- Message Bubble -->
+                        <div class="bubble">
+                            <p class="message" id="message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container container--footer">
+            <a class="footer__link" href="mailto:gonzalosilvera@gmail.com">gonzalosilvera@gmail.com</a>
+            <p class="footer__copyright">&copy; 2025 Gonzalo Silvera</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
